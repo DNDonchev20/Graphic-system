@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Project Details</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .chart {
+            width: 100%;
+            height: 400px;
+            position: relative;
+            border: 1px solid #ddd;
+        }
+        .task-bar {
+            position: absolute;
+            height: 20px;
+            background-color: #5cb85c;
+            border: 1px solid #4cae4c;
+            border-radius: 3px;
+        }
+        .task-label {
+            position: absolute;
+            font-size: 12px;
+            color: #fff;
+            padding-left: 5px;
+        }
+        .date-label {
+            position: absolute;
+            font-size: 12px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1 th:text="${project.name}">Project Name</h1>
+    <p><strong>Description:</strong> <span th:text="${project.description}">Project Description</span></p>
+    <p><strong>Budget:</strong> <span th:text="${project.budget}">0.00</span></p>
+    <p><strong>Start Date:</strong> <span th:text="${project.startDate}">YYYY-MM-DD</span></p>
+    <p><strong>End Date:</strong> <span th:text="${project.endDate}">YYYY-MM-DD</span></p>
+    <p><strong>Goals:</strong> <span th:text="${project.goals}">Project Goals</span></p>
+
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="tasks-tab" data-toggle="tab" href="#tasks" role="tab" aria-controls="tasks" aria-selected="true">Tasks</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="create-task-tab" data-toggle="tab" href="#create-task" role="tab" aria-controls="create-task" aria-selected="false">Create Task</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="gantt-tab" data-toggle="tab" href="#gantt" role="tab" aria-controls="gantt" aria-selected="false">Gantt Chart</a>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="tasks" role="tabpanel" aria-labelledby="tasks-tab">
+            <h3>Tasks</h3>
+            <ul class="list-group">
+                <li th:each="task : ${tasks}" class="list-group-item">
+                    <a th:href="@{/projects/{projectId}/tasks/{taskId}(projectId=${task.project.id}, taskId=${task.id})}">
+                        <strong th:text="${task.name}">Task Name</strong>
+                    </a><br>
+                    <span th:text="${task.description}">Task Description</span><br>
+                    <span><strong>Start Date:</strong> <span th:text="${task.startDate}">YYYY-MM-DD</span></span><br>
+                    <span><strong>End Date:</strong> <span th:text="${task.endDate}">YYYY-MM-DD</span></span><br>
+                    <span><strong>Goal:</strong> <span th:text="${task.goal}">Task Goal</span></span><br>
+                    <span><strong>Assignee:</strong> <span th:text="${task.assignee != null ? task.assignee.username : 'Unassigned'}">Unassigned</span></span>
+                </li>
+            </ul>
+        </div>
+        <div class="tab-pane fade" id="create-task" role="tabpanel" aria-labelledby="create-task-tab">
+            <h3>Create Task</h3>
+            <form th:action="@{/projects/{projectId}/tasks/create(projectId=${project.id})}" th:object="${newTask}" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" th:field="*{name}">
+                </div>
+                <div class="form-group">
+                    <label for="description">Description:</label>
+                    <textarea class="form-control" id="description" th:field="*{description}"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="startDate">Start Date:</label>
+                    <input type="date" class="form-control" id="startDate" th:field="*{startDate}">
+                </div>
+                <div class="form-group">
+                    <label for="endDate">End Date:</label>
+                    <input type="date" class="form-control" id="endDate" th:field="*{endDate}">
+                </div>
+                <div class="form-group">
+                    <label for="goal">Goal:</label>
+                    <textarea class="form-control" id="goal" th:field="*{goal}"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="priority">Priority:</label>
+                    <input type="number" class="form-control" id="priority" th:field="*{priority}">
+                </div>
+                <div class="form-group">
+                    <label for="assignee">Assignee:</label>
+                    <select class="form-control" id="assignee" th:field="*{assignee.id}">
+                        <option th:each="user : ${users}" th:value="${user.id}" th:text="${user.username}"></option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Create Task</button>
+            </form>
+        </div>
+        <div class="tab-pane fade" id="gantt" role="tabpanel" aria-labelledby="gantt-tab">
+            <h3>Gantt Chart</h3>
+            <div class="chart">
+                <div class="task-bar" style="top: 20px; left: 10%; width: 20%;">
+                    <div class="task-label">Complete the Gantt Chart</div>
+                </div>
+                <div class="task-bar" style="top: 50px; left: 30%; width: 40%;">
+                    <div class="task-label">Make the graphic UI</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

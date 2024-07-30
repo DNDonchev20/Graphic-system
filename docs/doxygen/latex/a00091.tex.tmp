@@ -1,0 +1,87 @@
+\doxysection{com.\+example.\+graphic\+\_\+system.\+controllers.\+Comment\+Controller Class Reference}
+\hypertarget{a00091}{}\label{a00091}\index{com.example.graphic\_system.controllers.CommentController@{com.example.graphic\_system.controllers.CommentController}}
+
+
+Collaboration diagram for com.\+example.\+graphic\+\_\+system.\+controllers.\+Comment\+Controller\+:
+% FIG 0
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{a00091_a49fd7ef7b3c43d039345351e4d8dd436}{get\+All\+Comments}} (@Path\+Variable Long task\+Id, Model model)
+\item 
+String \mbox{\hyperlink{a00091_ad6bc0aa59ca57999b4a1706aed9d56d9}{show\+Create\+Comment\+Form}} (@Path\+Variable Long task\+Id, Model model)
+\item 
+String \mbox{\hyperlink{a00091_a47ed4d439f40d393722c4ad795dc8e92}{create\+Comment}} (@Path\+Variable Long task\+Id, @Model\+Attribute("{}comment"{}) \mbox{\hyperlink{a00119}{Comment}} comment, Http\+Session session)
+\item 
+String \mbox{\hyperlink{a00091_a6a5082087f56ea503470ae1f5788ab22}{show\+Edit\+Comment\+Form}} (@Path\+Variable Long task\+Id, @Path\+Variable Long id, Model model)
+\item 
+String \mbox{\hyperlink{a00091_a6517200c3247bbd70fdc9ad75f2540a7}{update\+Comment}} (@Path\+Variable Long task\+Id, @Path\+Variable Long id, @Model\+Attribute("{}comment"{}) \mbox{\hyperlink{a00119}{Comment}} comment\+Details)
+\item 
+String \mbox{\hyperlink{a00091_af7cd208830b1fa0b12a961657d81d1bd}{delete\+Comment}} (@Path\+Variable Long task\+Id, @Path\+Variable Long id)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{a00159}{Comment\+Service}} \mbox{\hyperlink{a00091_a57c25098c13d30241997988d84a2d6b3}{comment\+Service}}
+\item 
+\mbox{\hyperlink{a00175}{Task\+Service}} \mbox{\hyperlink{a00091_ade23e30af6bfd986db27650e20933ae1}{task\+Service}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{a00091_a47ed4d439f40d393722c4ad795dc8e92}\index{com.example.graphic\_system.controllers.CommentController@{com.example.graphic\_system.controllers.CommentController}!createComment@{createComment}}
+\index{createComment@{createComment}!com.example.graphic\_system.controllers.CommentController@{com.example.graphic\_system.controllers.CommentController}}
+\doxysubsubsection{\texorpdfstring{createComment()}{createComment()}}
+{\footnotesize\ttfamily \label{a00091_a47ed4d439f40d393722c4ad795dc8e92} 
+String com.\+example.\+graphic\+\_\+system.\+controllers.\+Comment\+Controller.\+create\+Comment (\begin{DoxyParamCaption}\item[{@Path\+Variable Long}]{task\+Id}{, }\item[{@Model\+Attribute("{}comment"{}) \mbox{\hyperlink{a00119}{Comment}}}]{comment}{, }\item[{Http\+Session}]{session}{}\end{DoxyParamCaption})}
+
+\Hypertarget{a00091_af7cd208830b1fa0b12a961657d81d1bd}\index{com.example.graphic\_system.controllers.CommentController@{com.example.graphic\_system.controllers.CommentController}!deleteComment@{deleteComment}}
+\index{deleteComment@{deleteComment}!com.example.graphic\_system.controllers.CommentController@{com.example.graphic\_system.controllers.CommentController}}
+\doxysubsubsection{\texorpdfstring{deleteComment()}{deleteComment()}}
+{\footnotesize\ttfamily \label{a00091_af7cd208830b1fa0b12a961657d81d1bd} 
+String com.\+example.\+graphic\+\_\+system.\+controllers.\+Comment\+Controller.\+delete\+Comment (\begin{DoxyParamCaption}\item[{@Path\+Variable Long}]{task\+Id}{, }\item[{@Path\+Variable Long}]{id}{}\end{DoxyParamCaption})}
+
+\Hypertarget{a00091_a49fd7ef7b3c43d039345351e4d8dd436}\index{com.example.graphic\_system.controllers.CommentController@{com.example.graphic\_system.controllers.CommentController}!getAllComments@{getAllComments}}
+\index{getAllComments@{getAllComments}!com.example.graphic\_system.controllers.CommentController@{com.example.graphic\_system.controllers.CommentController}}
+\doxysubsubsection{\texorpdfstring{getAllComments()}{getAllComments()}}
+{\footnotesize\ttfamily \label{a00091_a49fd7ef7b3c43d039345351e4d8dd436} 
+String com.\+example.\+graphic\+\_\+system.\+controllers.\+Comment\+Controller.\+get\+All\+Comments (\begin{DoxyParamCaption}\item[{@Path\+Variable Long}]{task\+Id}{, }\item[{Model}]{model}{}\end{DoxyParamCaption})}
+
+\Hypertarget{a00091_ad6bc0aa59ca57999b4a1706aed9d56d9}\index{com.example.graphic\_system.controllers.CommentController@{com.example.graphic\_system.controllers.CommentController}!showCreateCommentForm@{showCreateCommentForm}}
+\index{showCreateCommentForm@{showCreateCommentForm}!com.example.graphic\_system.controllers.CommentController@{com.example.graphic\_system.controllers.CommentController}}
+\doxysubsubsection{\texorpdfstring{showCreateCommentForm()}{showCreateCommentForm()}}
+{\footnotesize\ttfamily \label{a00091_ad6bc0aa59ca57999b4a1706aed9d56d9} 
+String com.\+example.\+graphic\+\_\+system.\+controllers.\+Comment\+Controller.\+show\+Create\+Comment\+Form (\begin{DoxyParamCaption}\item[{@Path\+Variable Long}]{task\+Id}{, }\item[{Model}]{model}{}\end{DoxyParamCaption})}
+
+\Hypertarget{a00091_a6a5082087f56ea503470ae1f5788ab22}\index{com.example.graphic\_system.controllers.CommentController@{com.example.graphic\_system.controllers.CommentController}!showEditCommentForm@{showEditCommentForm}}
+\index{showEditCommentForm@{showEditCommentForm}!com.example.graphic\_system.controllers.CommentController@{com.example.graphic\_system.controllers.CommentController}}
+\doxysubsubsection{\texorpdfstring{showEditCommentForm()}{showEditCommentForm()}}
+{\footnotesize\ttfamily \label{a00091_a6a5082087f56ea503470ae1f5788ab22} 
+String com.\+example.\+graphic\+\_\+system.\+controllers.\+Comment\+Controller.\+show\+Edit\+Comment\+Form (\begin{DoxyParamCaption}\item[{@Path\+Variable Long}]{task\+Id}{, }\item[{@Path\+Variable Long}]{id}{, }\item[{Model}]{model}{}\end{DoxyParamCaption})}
+
+\Hypertarget{a00091_a6517200c3247bbd70fdc9ad75f2540a7}\index{com.example.graphic\_system.controllers.CommentController@{com.example.graphic\_system.controllers.CommentController}!updateComment@{updateComment}}
+\index{updateComment@{updateComment}!com.example.graphic\_system.controllers.CommentController@{com.example.graphic\_system.controllers.CommentController}}
+\doxysubsubsection{\texorpdfstring{updateComment()}{updateComment()}}
+{\footnotesize\ttfamily \label{a00091_a6517200c3247bbd70fdc9ad75f2540a7} 
+String com.\+example.\+graphic\+\_\+system.\+controllers.\+Comment\+Controller.\+update\+Comment (\begin{DoxyParamCaption}\item[{@Path\+Variable Long}]{task\+Id}{, }\item[{@Path\+Variable Long}]{id}{, }\item[{@Model\+Attribute("{}comment"{}) \mbox{\hyperlink{a00119}{Comment}}}]{comment\+Details}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{a00091_a57c25098c13d30241997988d84a2d6b3}\index{com.example.graphic\_system.controllers.CommentController@{com.example.graphic\_system.controllers.CommentController}!commentService@{commentService}}
+\index{commentService@{commentService}!com.example.graphic\_system.controllers.CommentController@{com.example.graphic\_system.controllers.CommentController}}
+\doxysubsubsection{\texorpdfstring{commentService}{commentService}}
+{\footnotesize\ttfamily \label{a00091_a57c25098c13d30241997988d84a2d6b3} 
+\mbox{\hyperlink{a00159}{Comment\+Service}} com.\+example.\+graphic\+\_\+system.\+controllers.\+Comment\+Controller.\+comment\+Service\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{a00091_ade23e30af6bfd986db27650e20933ae1}\index{com.example.graphic\_system.controllers.CommentController@{com.example.graphic\_system.controllers.CommentController}!taskService@{taskService}}
+\index{taskService@{taskService}!com.example.graphic\_system.controllers.CommentController@{com.example.graphic\_system.controllers.CommentController}}
+\doxysubsubsection{\texorpdfstring{taskService}{taskService}}
+{\footnotesize\ttfamily \label{a00091_ade23e30af6bfd986db27650e20933ae1} 
+\mbox{\hyperlink{a00175}{Task\+Service}} com.\+example.\+graphic\+\_\+system.\+controllers.\+Comment\+Controller.\+task\+Service\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/com/example/graphic\+\_\+system/controllers/\mbox{\hyperlink{a00002}{Comment\+Controller.\+java}}\end{DoxyCompactItemize}

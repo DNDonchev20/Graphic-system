@@ -1,0 +1,138 @@
+\doxysection{com.\+example.\+graphic\+\_\+system.\+controllers.\+User\+Controller Class Reference}
+\hypertarget{a00111}{}\label{a00111}\index{com.example.graphic\_system.controllers.UserController@{com.example.graphic\_system.controllers.UserController}}
+
+
+Collaboration diagram for com.\+example.\+graphic\+\_\+system.\+controllers.\+User\+Controller\+:
+% FIG 0
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{a00111_a0d61bc0483131485826b7385c3f211c4}{show\+Registration\+Form}} (Model model)
+\item 
+String \mbox{\hyperlink{a00111_a6a987da8db43444c49fbf36367f18b05}{register\+User}} (@Model\+Attribute("{}user"{}) \mbox{\hyperlink{a00135}{User}} user, Http\+Session session)
+\item 
+String \mbox{\hyperlink{a00111_af1252a4d74b4b8b82421615911b0134e}{show\+Login\+Form}} (Model model)
+\item 
+String \mbox{\hyperlink{a00111_a863abecba49e8140311c9f28ad3c96fb}{login\+User}} (@Model\+Attribute("{}user"{}) \mbox{\hyperlink{a00135}{User}} user, Http\+Session session, Model model)
+\item 
+String \mbox{\hyperlink{a00111_a75044268cc7b3ec1c51f9f82f74a3656}{logout\+User}} (Http\+Session session)
+\item 
+String \mbox{\hyperlink{a00111_a6ed3df179cb8c1414475ff0ec40431c5}{get\+All\+Users}} (Model model)
+\item 
+String \mbox{\hyperlink{a00111_acc6d87611e5a73aa8a6876c9257737b1}{show\+Create\+User\+Form}} (Model model)
+\item 
+String \mbox{\hyperlink{a00111_a563f0db46c4315f4871845403f750160}{create\+User}} (@Model\+Attribute("{}user"{}) \mbox{\hyperlink{a00135}{User}} user)
+\item 
+String \mbox{\hyperlink{a00111_a6d8a9475464adfe42e1791de653dc708}{show\+Edit\+User\+Form}} (@Path\+Variable Long id, Model model)
+\item 
+String \mbox{\hyperlink{a00111_a50dce84f2579b385543279f805991cc5}{update\+User}} (@Path\+Variable Long id, @Model\+Attribute("{}user"{}) \mbox{\hyperlink{a00135}{User}} user\+Details)
+\item 
+String \mbox{\hyperlink{a00111_ad96aeca212434990f61122f80769fe6f}{delete\+User}} (@Path\+Variable Long id)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ String $>$ \mbox{\hyperlink{a00111_ac1fcc01a7800ab60a04e45ad0affe7f3}{get\+Roles}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{a00179}{User\+Service}} \mbox{\hyperlink{a00111_ad4198c954f3187205f4262f4c4fe5383}{user\+Service}}
+\item 
+Password\+Encoder \mbox{\hyperlink{a00111_ac197d64beb818c1ff2db40895ac53641}{password\+Encoder}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{a00111_a563f0db46c4315f4871845403f750160}\index{com.example.graphic\_system.controllers.UserController@{com.example.graphic\_system.controllers.UserController}!createUser@{createUser}}
+\index{createUser@{createUser}!com.example.graphic\_system.controllers.UserController@{com.example.graphic\_system.controllers.UserController}}
+\doxysubsubsection{\texorpdfstring{createUser()}{createUser()}}
+{\footnotesize\ttfamily \label{a00111_a563f0db46c4315f4871845403f750160} 
+String com.\+example.\+graphic\+\_\+system.\+controllers.\+User\+Controller.\+create\+User (\begin{DoxyParamCaption}\item[{@Model\+Attribute("{}user"{}) \mbox{\hyperlink{a00135}{User}}}]{user}{}\end{DoxyParamCaption})}
+
+\Hypertarget{a00111_ad96aeca212434990f61122f80769fe6f}\index{com.example.graphic\_system.controllers.UserController@{com.example.graphic\_system.controllers.UserController}!deleteUser@{deleteUser}}
+\index{deleteUser@{deleteUser}!com.example.graphic\_system.controllers.UserController@{com.example.graphic\_system.controllers.UserController}}
+\doxysubsubsection{\texorpdfstring{deleteUser()}{deleteUser()}}
+{\footnotesize\ttfamily \label{a00111_ad96aeca212434990f61122f80769fe6f} 
+String com.\+example.\+graphic\+\_\+system.\+controllers.\+User\+Controller.\+delete\+User (\begin{DoxyParamCaption}\item[{@Path\+Variable Long}]{id}{}\end{DoxyParamCaption})}
+
+\Hypertarget{a00111_a6ed3df179cb8c1414475ff0ec40431c5}\index{com.example.graphic\_system.controllers.UserController@{com.example.graphic\_system.controllers.UserController}!getAllUsers@{getAllUsers}}
+\index{getAllUsers@{getAllUsers}!com.example.graphic\_system.controllers.UserController@{com.example.graphic\_system.controllers.UserController}}
+\doxysubsubsection{\texorpdfstring{getAllUsers()}{getAllUsers()}}
+{\footnotesize\ttfamily \label{a00111_a6ed3df179cb8c1414475ff0ec40431c5} 
+String com.\+example.\+graphic\+\_\+system.\+controllers.\+User\+Controller.\+get\+All\+Users (\begin{DoxyParamCaption}\item[{Model}]{model}{}\end{DoxyParamCaption})}
+
+\Hypertarget{a00111_ac1fcc01a7800ab60a04e45ad0affe7f3}\index{com.example.graphic\_system.controllers.UserController@{com.example.graphic\_system.controllers.UserController}!getRoles@{getRoles}}
+\index{getRoles@{getRoles}!com.example.graphic\_system.controllers.UserController@{com.example.graphic\_system.controllers.UserController}}
+\doxysubsubsection{\texorpdfstring{getRoles()}{getRoles()}}
+{\footnotesize\ttfamily \label{a00111_ac1fcc01a7800ab60a04e45ad0affe7f3} 
+List$<$ String $>$ com.\+example.\+graphic\+\_\+system.\+controllers.\+User\+Controller.\+get\+Roles (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{a00111_a863abecba49e8140311c9f28ad3c96fb}\index{com.example.graphic\_system.controllers.UserController@{com.example.graphic\_system.controllers.UserController}!loginUser@{loginUser}}
+\index{loginUser@{loginUser}!com.example.graphic\_system.controllers.UserController@{com.example.graphic\_system.controllers.UserController}}
+\doxysubsubsection{\texorpdfstring{loginUser()}{loginUser()}}
+{\footnotesize\ttfamily \label{a00111_a863abecba49e8140311c9f28ad3c96fb} 
+String com.\+example.\+graphic\+\_\+system.\+controllers.\+User\+Controller.\+login\+User (\begin{DoxyParamCaption}\item[{@Model\+Attribute("{}user"{}) \mbox{\hyperlink{a00135}{User}}}]{user}{, }\item[{Http\+Session}]{session}{, }\item[{Model}]{model}{}\end{DoxyParamCaption})}
+
+\Hypertarget{a00111_a75044268cc7b3ec1c51f9f82f74a3656}\index{com.example.graphic\_system.controllers.UserController@{com.example.graphic\_system.controllers.UserController}!logoutUser@{logoutUser}}
+\index{logoutUser@{logoutUser}!com.example.graphic\_system.controllers.UserController@{com.example.graphic\_system.controllers.UserController}}
+\doxysubsubsection{\texorpdfstring{logoutUser()}{logoutUser()}}
+{\footnotesize\ttfamily \label{a00111_a75044268cc7b3ec1c51f9f82f74a3656} 
+String com.\+example.\+graphic\+\_\+system.\+controllers.\+User\+Controller.\+logout\+User (\begin{DoxyParamCaption}\item[{Http\+Session}]{session}{}\end{DoxyParamCaption})}
+
+\Hypertarget{a00111_a6a987da8db43444c49fbf36367f18b05}\index{com.example.graphic\_system.controllers.UserController@{com.example.graphic\_system.controllers.UserController}!registerUser@{registerUser}}
+\index{registerUser@{registerUser}!com.example.graphic\_system.controllers.UserController@{com.example.graphic\_system.controllers.UserController}}
+\doxysubsubsection{\texorpdfstring{registerUser()}{registerUser()}}
+{\footnotesize\ttfamily \label{a00111_a6a987da8db43444c49fbf36367f18b05} 
+String com.\+example.\+graphic\+\_\+system.\+controllers.\+User\+Controller.\+register\+User (\begin{DoxyParamCaption}\item[{@Model\+Attribute("{}user"{}) \mbox{\hyperlink{a00135}{User}}}]{user}{, }\item[{Http\+Session}]{session}{}\end{DoxyParamCaption})}
+
+\Hypertarget{a00111_acc6d87611e5a73aa8a6876c9257737b1}\index{com.example.graphic\_system.controllers.UserController@{com.example.graphic\_system.controllers.UserController}!showCreateUserForm@{showCreateUserForm}}
+\index{showCreateUserForm@{showCreateUserForm}!com.example.graphic\_system.controllers.UserController@{com.example.graphic\_system.controllers.UserController}}
+\doxysubsubsection{\texorpdfstring{showCreateUserForm()}{showCreateUserForm()}}
+{\footnotesize\ttfamily \label{a00111_acc6d87611e5a73aa8a6876c9257737b1} 
+String com.\+example.\+graphic\+\_\+system.\+controllers.\+User\+Controller.\+show\+Create\+User\+Form (\begin{DoxyParamCaption}\item[{Model}]{model}{}\end{DoxyParamCaption})}
+
+\Hypertarget{a00111_a6d8a9475464adfe42e1791de653dc708}\index{com.example.graphic\_system.controllers.UserController@{com.example.graphic\_system.controllers.UserController}!showEditUserForm@{showEditUserForm}}
+\index{showEditUserForm@{showEditUserForm}!com.example.graphic\_system.controllers.UserController@{com.example.graphic\_system.controllers.UserController}}
+\doxysubsubsection{\texorpdfstring{showEditUserForm()}{showEditUserForm()}}
+{\footnotesize\ttfamily \label{a00111_a6d8a9475464adfe42e1791de653dc708} 
+String com.\+example.\+graphic\+\_\+system.\+controllers.\+User\+Controller.\+show\+Edit\+User\+Form (\begin{DoxyParamCaption}\item[{@Path\+Variable Long}]{id}{, }\item[{Model}]{model}{}\end{DoxyParamCaption})}
+
+\Hypertarget{a00111_af1252a4d74b4b8b82421615911b0134e}\index{com.example.graphic\_system.controllers.UserController@{com.example.graphic\_system.controllers.UserController}!showLoginForm@{showLoginForm}}
+\index{showLoginForm@{showLoginForm}!com.example.graphic\_system.controllers.UserController@{com.example.graphic\_system.controllers.UserController}}
+\doxysubsubsection{\texorpdfstring{showLoginForm()}{showLoginForm()}}
+{\footnotesize\ttfamily \label{a00111_af1252a4d74b4b8b82421615911b0134e} 
+String com.\+example.\+graphic\+\_\+system.\+controllers.\+User\+Controller.\+show\+Login\+Form (\begin{DoxyParamCaption}\item[{Model}]{model}{}\end{DoxyParamCaption})}
+
+\Hypertarget{a00111_a0d61bc0483131485826b7385c3f211c4}\index{com.example.graphic\_system.controllers.UserController@{com.example.graphic\_system.controllers.UserController}!showRegistrationForm@{showRegistrationForm}}
+\index{showRegistrationForm@{showRegistrationForm}!com.example.graphic\_system.controllers.UserController@{com.example.graphic\_system.controllers.UserController}}
+\doxysubsubsection{\texorpdfstring{showRegistrationForm()}{showRegistrationForm()}}
+{\footnotesize\ttfamily \label{a00111_a0d61bc0483131485826b7385c3f211c4} 
+String com.\+example.\+graphic\+\_\+system.\+controllers.\+User\+Controller.\+show\+Registration\+Form (\begin{DoxyParamCaption}\item[{Model}]{model}{}\end{DoxyParamCaption})}
+
+\Hypertarget{a00111_a50dce84f2579b385543279f805991cc5}\index{com.example.graphic\_system.controllers.UserController@{com.example.graphic\_system.controllers.UserController}!updateUser@{updateUser}}
+\index{updateUser@{updateUser}!com.example.graphic\_system.controllers.UserController@{com.example.graphic\_system.controllers.UserController}}
+\doxysubsubsection{\texorpdfstring{updateUser()}{updateUser()}}
+{\footnotesize\ttfamily \label{a00111_a50dce84f2579b385543279f805991cc5} 
+String com.\+example.\+graphic\+\_\+system.\+controllers.\+User\+Controller.\+update\+User (\begin{DoxyParamCaption}\item[{@Path\+Variable Long}]{id}{, }\item[{@Model\+Attribute("{}user"{}) \mbox{\hyperlink{a00135}{User}}}]{user\+Details}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{a00111_ac197d64beb818c1ff2db40895ac53641}\index{com.example.graphic\_system.controllers.UserController@{com.example.graphic\_system.controllers.UserController}!passwordEncoder@{passwordEncoder}}
+\index{passwordEncoder@{passwordEncoder}!com.example.graphic\_system.controllers.UserController@{com.example.graphic\_system.controllers.UserController}}
+\doxysubsubsection{\texorpdfstring{passwordEncoder}{passwordEncoder}}
+{\footnotesize\ttfamily \label{a00111_ac197d64beb818c1ff2db40895ac53641} 
+Password\+Encoder com.\+example.\+graphic\+\_\+system.\+controllers.\+User\+Controller.\+password\+Encoder\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{a00111_ad4198c954f3187205f4262f4c4fe5383}\index{com.example.graphic\_system.controllers.UserController@{com.example.graphic\_system.controllers.UserController}!userService@{userService}}
+\index{userService@{userService}!com.example.graphic\_system.controllers.UserController@{com.example.graphic\_system.controllers.UserController}}
+\doxysubsubsection{\texorpdfstring{userService}{userService}}
+{\footnotesize\ttfamily \label{a00111_ad4198c954f3187205f4262f4c4fe5383} 
+\mbox{\hyperlink{a00179}{User\+Service}} com.\+example.\+graphic\+\_\+system.\+controllers.\+User\+Controller.\+user\+Service\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/com/example/graphic\+\_\+system/controllers/\mbox{\hyperlink{a00017}{User\+Controller.\+java}}\end{DoxyCompactItemize}

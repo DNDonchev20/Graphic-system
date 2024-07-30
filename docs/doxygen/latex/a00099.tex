@@ -1,0 +1,127 @@
+\doxysection{com.\+example.\+graphic\+\_\+system.\+controllers.\+Project\+Controller Class Reference}
+\hypertarget{a00099}{}\label{a00099}\index{com.example.graphic\_system.controllers.ProjectController@{com.example.graphic\_system.controllers.ProjectController}}
+
+
+Collaboration diagram for com.\+example.\+graphic\+\_\+system.\+controllers.\+Project\+Controller\+:
+% FIG 0
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{a00099_a3f162ea71f0453521d688e30e040cd0e}{init\+Binder}} (Web\+Data\+Binder binder)
+\item 
+String \mbox{\hyperlink{a00099_a7e7a7613da3e33695c69a25b821fb258}{get\+All\+Projects}} (Model model)
+\item 
+String \mbox{\hyperlink{a00099_a5d14499378c9854a6e455dab519a83a6}{show\+Create\+Project\+Form}} (Model model)
+\item 
+String \mbox{\hyperlink{a00099_ac747c0ca33d5520b290e4297aef27699}{create\+Project}} (@Model\+Attribute("{}project"{}) \mbox{\hyperlink{a00123}{Project}} project, @Request\+Param(name="{}user\+Ids"{}, required=false) List$<$ Long $>$ user\+Ids)
+\item 
+String \mbox{\hyperlink{a00099_ae4433e2d56608176bfeb0260cd387387}{show\+Edit\+Project\+Form}} (@Path\+Variable Long id, Model model)
+\item 
+String \mbox{\hyperlink{a00099_a7ac21dac870053a63441d4e076aedf72}{update\+Project}} (@Path\+Variable Long id, @Model\+Attribute("{}project"{}) \mbox{\hyperlink{a00123}{Project}} project\+Details, @Request\+Param(name="{}user\+Ids"{}, required=false) List$<$ Long $>$ user\+Ids)
+\item 
+String \mbox{\hyperlink{a00099_ae519ff072ad922764c474c2c83778956}{delete\+Project}} (@Path\+Variable Long id)
+\item 
+String \mbox{\hyperlink{a00099_a567e3632b8a2157da066aac6234b1035}{view\+Project}} (@Path\+Variable Long id, Model model, Http\+Session session)
+\item 
+String \mbox{\hyperlink{a00099_a510bb2a5ad58b6befd0765322175da8c}{create\+Task}} (@Path\+Variable Long project\+Id, @Model\+Attribute("{}task"{}) \mbox{\hyperlink{a00131}{Task}} task, @Request\+Param @Date\+Time\+Format(pattern="{}yyyy-\/MM-\/dd"{}) Date start\+Date, @Request\+Param @Date\+Time\+Format(pattern="{}yyyy-\/MM-\/dd"{}) Date end\+Date, Http\+Session session)
+\item 
+String \mbox{\hyperlink{a00099_a9bc874d9e3729bfaa58aa5ad8a935799}{delete\+Task}} (@Path\+Variable Long project\+Id, @Path\+Variable Long task\+Id, Http\+Session session)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{a00167}{Project\+Service}} \mbox{\hyperlink{a00099_a2b908e7249c975246a4bc65d31811c11}{project\+Service}}
+\item 
+\mbox{\hyperlink{a00175}{Task\+Service}} \mbox{\hyperlink{a00099_ab2c5bdc21041545f65761bb17ce4b69e}{task\+Service}}
+\item 
+\mbox{\hyperlink{a00179}{User\+Service}} \mbox{\hyperlink{a00099_a42b8cfbbfba0a1e0a30577b35f82beea}{user\+Service}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{a00099_ac747c0ca33d5520b290e4297aef27699}\index{com.example.graphic\_system.controllers.ProjectController@{com.example.graphic\_system.controllers.ProjectController}!createProject@{createProject}}
+\index{createProject@{createProject}!com.example.graphic\_system.controllers.ProjectController@{com.example.graphic\_system.controllers.ProjectController}}
+\doxysubsubsection{\texorpdfstring{createProject()}{createProject()}}
+{\footnotesize\ttfamily \label{a00099_ac747c0ca33d5520b290e4297aef27699} 
+String com.\+example.\+graphic\+\_\+system.\+controllers.\+Project\+Controller.\+create\+Project (\begin{DoxyParamCaption}\item[{@Model\+Attribute("{}project"{}) \mbox{\hyperlink{a00123}{Project}}}]{project}{, }\item[{@Request\+Param(name="{}user\+Ids"{}, required=false) List$<$ Long $>$}]{user\+Ids}{}\end{DoxyParamCaption})}
+
+\Hypertarget{a00099_a510bb2a5ad58b6befd0765322175da8c}\index{com.example.graphic\_system.controllers.ProjectController@{com.example.graphic\_system.controllers.ProjectController}!createTask@{createTask}}
+\index{createTask@{createTask}!com.example.graphic\_system.controllers.ProjectController@{com.example.graphic\_system.controllers.ProjectController}}
+\doxysubsubsection{\texorpdfstring{createTask()}{createTask()}}
+{\footnotesize\ttfamily \label{a00099_a510bb2a5ad58b6befd0765322175da8c} 
+String com.\+example.\+graphic\+\_\+system.\+controllers.\+Project\+Controller.\+create\+Task (\begin{DoxyParamCaption}\item[{@Path\+Variable Long}]{project\+Id}{, }\item[{@Model\+Attribute("{}task"{}) \mbox{\hyperlink{a00131}{Task}}}]{task}{, }\item[{@Request\+Param @Date\+Time\+Format(pattern="{}yyyy-\/MM-\/dd"{}) Date}]{start\+Date}{, }\item[{@Request\+Param @Date\+Time\+Format(pattern="{}yyyy-\/MM-\/dd"{}) Date}]{end\+Date}{, }\item[{Http\+Session}]{session}{}\end{DoxyParamCaption})}
+
+\Hypertarget{a00099_ae519ff072ad922764c474c2c83778956}\index{com.example.graphic\_system.controllers.ProjectController@{com.example.graphic\_system.controllers.ProjectController}!deleteProject@{deleteProject}}
+\index{deleteProject@{deleteProject}!com.example.graphic\_system.controllers.ProjectController@{com.example.graphic\_system.controllers.ProjectController}}
+\doxysubsubsection{\texorpdfstring{deleteProject()}{deleteProject()}}
+{\footnotesize\ttfamily \label{a00099_ae519ff072ad922764c474c2c83778956} 
+String com.\+example.\+graphic\+\_\+system.\+controllers.\+Project\+Controller.\+delete\+Project (\begin{DoxyParamCaption}\item[{@Path\+Variable Long}]{id}{}\end{DoxyParamCaption})}
+
+\Hypertarget{a00099_a9bc874d9e3729bfaa58aa5ad8a935799}\index{com.example.graphic\_system.controllers.ProjectController@{com.example.graphic\_system.controllers.ProjectController}!deleteTask@{deleteTask}}
+\index{deleteTask@{deleteTask}!com.example.graphic\_system.controllers.ProjectController@{com.example.graphic\_system.controllers.ProjectController}}
+\doxysubsubsection{\texorpdfstring{deleteTask()}{deleteTask()}}
+{\footnotesize\ttfamily \label{a00099_a9bc874d9e3729bfaa58aa5ad8a935799} 
+String com.\+example.\+graphic\+\_\+system.\+controllers.\+Project\+Controller.\+delete\+Task (\begin{DoxyParamCaption}\item[{@Path\+Variable Long}]{project\+Id}{, }\item[{@Path\+Variable Long}]{task\+Id}{, }\item[{Http\+Session}]{session}{}\end{DoxyParamCaption})}
+
+\Hypertarget{a00099_a7e7a7613da3e33695c69a25b821fb258}\index{com.example.graphic\_system.controllers.ProjectController@{com.example.graphic\_system.controllers.ProjectController}!getAllProjects@{getAllProjects}}
+\index{getAllProjects@{getAllProjects}!com.example.graphic\_system.controllers.ProjectController@{com.example.graphic\_system.controllers.ProjectController}}
+\doxysubsubsection{\texorpdfstring{getAllProjects()}{getAllProjects()}}
+{\footnotesize\ttfamily \label{a00099_a7e7a7613da3e33695c69a25b821fb258} 
+String com.\+example.\+graphic\+\_\+system.\+controllers.\+Project\+Controller.\+get\+All\+Projects (\begin{DoxyParamCaption}\item[{Model}]{model}{}\end{DoxyParamCaption})}
+
+\Hypertarget{a00099_a3f162ea71f0453521d688e30e040cd0e}\index{com.example.graphic\_system.controllers.ProjectController@{com.example.graphic\_system.controllers.ProjectController}!initBinder@{initBinder}}
+\index{initBinder@{initBinder}!com.example.graphic\_system.controllers.ProjectController@{com.example.graphic\_system.controllers.ProjectController}}
+\doxysubsubsection{\texorpdfstring{initBinder()}{initBinder()}}
+{\footnotesize\ttfamily \label{a00099_a3f162ea71f0453521d688e30e040cd0e} 
+void com.\+example.\+graphic\+\_\+system.\+controllers.\+Project\+Controller.\+init\+Binder (\begin{DoxyParamCaption}\item[{Web\+Data\+Binder}]{binder}{}\end{DoxyParamCaption})}
+
+\Hypertarget{a00099_a5d14499378c9854a6e455dab519a83a6}\index{com.example.graphic\_system.controllers.ProjectController@{com.example.graphic\_system.controllers.ProjectController}!showCreateProjectForm@{showCreateProjectForm}}
+\index{showCreateProjectForm@{showCreateProjectForm}!com.example.graphic\_system.controllers.ProjectController@{com.example.graphic\_system.controllers.ProjectController}}
+\doxysubsubsection{\texorpdfstring{showCreateProjectForm()}{showCreateProjectForm()}}
+{\footnotesize\ttfamily \label{a00099_a5d14499378c9854a6e455dab519a83a6} 
+String com.\+example.\+graphic\+\_\+system.\+controllers.\+Project\+Controller.\+show\+Create\+Project\+Form (\begin{DoxyParamCaption}\item[{Model}]{model}{}\end{DoxyParamCaption})}
+
+\Hypertarget{a00099_ae4433e2d56608176bfeb0260cd387387}\index{com.example.graphic\_system.controllers.ProjectController@{com.example.graphic\_system.controllers.ProjectController}!showEditProjectForm@{showEditProjectForm}}
+\index{showEditProjectForm@{showEditProjectForm}!com.example.graphic\_system.controllers.ProjectController@{com.example.graphic\_system.controllers.ProjectController}}
+\doxysubsubsection{\texorpdfstring{showEditProjectForm()}{showEditProjectForm()}}
+{\footnotesize\ttfamily \label{a00099_ae4433e2d56608176bfeb0260cd387387} 
+String com.\+example.\+graphic\+\_\+system.\+controllers.\+Project\+Controller.\+show\+Edit\+Project\+Form (\begin{DoxyParamCaption}\item[{@Path\+Variable Long}]{id}{, }\item[{Model}]{model}{}\end{DoxyParamCaption})}
+
+\Hypertarget{a00099_a7ac21dac870053a63441d4e076aedf72}\index{com.example.graphic\_system.controllers.ProjectController@{com.example.graphic\_system.controllers.ProjectController}!updateProject@{updateProject}}
+\index{updateProject@{updateProject}!com.example.graphic\_system.controllers.ProjectController@{com.example.graphic\_system.controllers.ProjectController}}
+\doxysubsubsection{\texorpdfstring{updateProject()}{updateProject()}}
+{\footnotesize\ttfamily \label{a00099_a7ac21dac870053a63441d4e076aedf72} 
+String com.\+example.\+graphic\+\_\+system.\+controllers.\+Project\+Controller.\+update\+Project (\begin{DoxyParamCaption}\item[{@Path\+Variable Long}]{id}{, }\item[{@Model\+Attribute("{}project"{}) \mbox{\hyperlink{a00123}{Project}}}]{project\+Details}{, }\item[{@Request\+Param(name="{}user\+Ids"{}, required=false) List$<$ Long $>$}]{user\+Ids}{}\end{DoxyParamCaption})}
+
+\Hypertarget{a00099_a567e3632b8a2157da066aac6234b1035}\index{com.example.graphic\_system.controllers.ProjectController@{com.example.graphic\_system.controllers.ProjectController}!viewProject@{viewProject}}
+\index{viewProject@{viewProject}!com.example.graphic\_system.controllers.ProjectController@{com.example.graphic\_system.controllers.ProjectController}}
+\doxysubsubsection{\texorpdfstring{viewProject()}{viewProject()}}
+{\footnotesize\ttfamily \label{a00099_a567e3632b8a2157da066aac6234b1035} 
+String com.\+example.\+graphic\+\_\+system.\+controllers.\+Project\+Controller.\+view\+Project (\begin{DoxyParamCaption}\item[{@Path\+Variable Long}]{id}{, }\item[{Model}]{model}{, }\item[{Http\+Session}]{session}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{a00099_a2b908e7249c975246a4bc65d31811c11}\index{com.example.graphic\_system.controllers.ProjectController@{com.example.graphic\_system.controllers.ProjectController}!projectService@{projectService}}
+\index{projectService@{projectService}!com.example.graphic\_system.controllers.ProjectController@{com.example.graphic\_system.controllers.ProjectController}}
+\doxysubsubsection{\texorpdfstring{projectService}{projectService}}
+{\footnotesize\ttfamily \label{a00099_a2b908e7249c975246a4bc65d31811c11} 
+\mbox{\hyperlink{a00167}{Project\+Service}} com.\+example.\+graphic\+\_\+system.\+controllers.\+Project\+Controller.\+project\+Service\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{a00099_ab2c5bdc21041545f65761bb17ce4b69e}\index{com.example.graphic\_system.controllers.ProjectController@{com.example.graphic\_system.controllers.ProjectController}!taskService@{taskService}}
+\index{taskService@{taskService}!com.example.graphic\_system.controllers.ProjectController@{com.example.graphic\_system.controllers.ProjectController}}
+\doxysubsubsection{\texorpdfstring{taskService}{taskService}}
+{\footnotesize\ttfamily \label{a00099_ab2c5bdc21041545f65761bb17ce4b69e} 
+\mbox{\hyperlink{a00175}{Task\+Service}} com.\+example.\+graphic\+\_\+system.\+controllers.\+Project\+Controller.\+task\+Service\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{a00099_a42b8cfbbfba0a1e0a30577b35f82beea}\index{com.example.graphic\_system.controllers.ProjectController@{com.example.graphic\_system.controllers.ProjectController}!userService@{userService}}
+\index{userService@{userService}!com.example.graphic\_system.controllers.ProjectController@{com.example.graphic\_system.controllers.ProjectController}}
+\doxysubsubsection{\texorpdfstring{userService}{userService}}
+{\footnotesize\ttfamily \label{a00099_a42b8cfbbfba0a1e0a30577b35f82beea} 
+\mbox{\hyperlink{a00179}{User\+Service}} com.\+example.\+graphic\+\_\+system.\+controllers.\+Project\+Controller.\+user\+Service\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/com/example/graphic\+\_\+system/controllers/\mbox{\hyperlink{a00008}{Project\+Controller.\+java}}\end{DoxyCompactItemize}

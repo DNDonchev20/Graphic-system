@@ -1,0 +1,95 @@
+\doxysection{com.\+example.\+graphic\+\_\+system.\+services.\+User\+Service Class Reference}
+\hypertarget{a00179}{}\label{a00179}\index{com.example.graphic\_system.services.UserService@{com.example.graphic\_system.services.UserService}}
+
+
+Collaboration diagram for com.\+example.\+graphic\+\_\+system.\+services.\+User\+Service\+:
+% FIG 0
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{a00135}{User}} $>$ \mbox{\hyperlink{a00179_af0052f0931a5265d36128d28aca69e01}{get\+All\+Users}} ()
+\item 
+Optional$<$ \mbox{\hyperlink{a00135}{User}} $>$ \mbox{\hyperlink{a00179_a88c0fbb4122fb732b11635b3b4a977a7}{get\+User\+By\+Id}} (Long id)
+\item 
+List$<$ \mbox{\hyperlink{a00135}{User}} $>$ \mbox{\hyperlink{a00179_a66da1c2c69c7601ba096e7d1e61ee1f2}{get\+Users\+By\+Ids}} (List$<$ Long $>$ ids)
+\item 
+\mbox{\hyperlink{a00135}{User}} \mbox{\hyperlink{a00179_a3fea43a76da8890d0dc2ab9a8322c2ec}{create\+User}} (\mbox{\hyperlink{a00135}{User}} user)
+\item 
+\mbox{\hyperlink{a00135}{User}} \mbox{\hyperlink{a00179_a787c7012f29daa89b4b71f7b8e2c0fd8}{update\+User}} (Long id, \mbox{\hyperlink{a00135}{User}} user\+Details)
+\item 
+void \mbox{\hyperlink{a00179_a155be36afd001fcaa6f2b2c3c10a7bef}{delete\+User}} (Long id)
+\item 
+\mbox{\hyperlink{a00135}{User}} \mbox{\hyperlink{a00179_a7884eedb0c0569f22e14e7311489cc7c}{find\+By\+Username}} (String username)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{a00155}{User\+Repository}} \mbox{\hyperlink{a00179_a27e17d5aaf9f6750f7fcfea0d3ad9dc5}{user\+Repository}}
+\item 
+Password\+Encoder \mbox{\hyperlink{a00179_a71a3d54ab4bfe7bfc0b59430c111cd27}{password\+Encoder}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{a00179_a3fea43a76da8890d0dc2ab9a8322c2ec}\index{com.example.graphic\_system.services.UserService@{com.example.graphic\_system.services.UserService}!createUser@{createUser}}
+\index{createUser@{createUser}!com.example.graphic\_system.services.UserService@{com.example.graphic\_system.services.UserService}}
+\doxysubsubsection{\texorpdfstring{createUser()}{createUser()}}
+{\footnotesize\ttfamily \label{a00179_a3fea43a76da8890d0dc2ab9a8322c2ec} 
+\mbox{\hyperlink{a00135}{User}} com.\+example.\+graphic\+\_\+system.\+services.\+User\+Service.\+create\+User (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{a00135}{User}}}]{user}{}\end{DoxyParamCaption})}
+
+\Hypertarget{a00179_a155be36afd001fcaa6f2b2c3c10a7bef}\index{com.example.graphic\_system.services.UserService@{com.example.graphic\_system.services.UserService}!deleteUser@{deleteUser}}
+\index{deleteUser@{deleteUser}!com.example.graphic\_system.services.UserService@{com.example.graphic\_system.services.UserService}}
+\doxysubsubsection{\texorpdfstring{deleteUser()}{deleteUser()}}
+{\footnotesize\ttfamily \label{a00179_a155be36afd001fcaa6f2b2c3c10a7bef} 
+void com.\+example.\+graphic\+\_\+system.\+services.\+User\+Service.\+delete\+User (\begin{DoxyParamCaption}\item[{Long}]{id}{}\end{DoxyParamCaption})}
+
+\Hypertarget{a00179_a7884eedb0c0569f22e14e7311489cc7c}\index{com.example.graphic\_system.services.UserService@{com.example.graphic\_system.services.UserService}!findByUsername@{findByUsername}}
+\index{findByUsername@{findByUsername}!com.example.graphic\_system.services.UserService@{com.example.graphic\_system.services.UserService}}
+\doxysubsubsection{\texorpdfstring{findByUsername()}{findByUsername()}}
+{\footnotesize\ttfamily \label{a00179_a7884eedb0c0569f22e14e7311489cc7c} 
+\mbox{\hyperlink{a00135}{User}} com.\+example.\+graphic\+\_\+system.\+services.\+User\+Service.\+find\+By\+Username (\begin{DoxyParamCaption}\item[{String}]{username}{}\end{DoxyParamCaption})}
+
+\Hypertarget{a00179_af0052f0931a5265d36128d28aca69e01}\index{com.example.graphic\_system.services.UserService@{com.example.graphic\_system.services.UserService}!getAllUsers@{getAllUsers}}
+\index{getAllUsers@{getAllUsers}!com.example.graphic\_system.services.UserService@{com.example.graphic\_system.services.UserService}}
+\doxysubsubsection{\texorpdfstring{getAllUsers()}{getAllUsers()}}
+{\footnotesize\ttfamily \label{a00179_af0052f0931a5265d36128d28aca69e01} 
+List$<$ \mbox{\hyperlink{a00135}{User}} $>$ com.\+example.\+graphic\+\_\+system.\+services.\+User\+Service.\+get\+All\+Users (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{a00179_a88c0fbb4122fb732b11635b3b4a977a7}\index{com.example.graphic\_system.services.UserService@{com.example.graphic\_system.services.UserService}!getUserById@{getUserById}}
+\index{getUserById@{getUserById}!com.example.graphic\_system.services.UserService@{com.example.graphic\_system.services.UserService}}
+\doxysubsubsection{\texorpdfstring{getUserById()}{getUserById()}}
+{\footnotesize\ttfamily \label{a00179_a88c0fbb4122fb732b11635b3b4a977a7} 
+Optional$<$ \mbox{\hyperlink{a00135}{User}} $>$ com.\+example.\+graphic\+\_\+system.\+services.\+User\+Service.\+get\+User\+By\+Id (\begin{DoxyParamCaption}\item[{Long}]{id}{}\end{DoxyParamCaption})}
+
+\Hypertarget{a00179_a66da1c2c69c7601ba096e7d1e61ee1f2}\index{com.example.graphic\_system.services.UserService@{com.example.graphic\_system.services.UserService}!getUsersByIds@{getUsersByIds}}
+\index{getUsersByIds@{getUsersByIds}!com.example.graphic\_system.services.UserService@{com.example.graphic\_system.services.UserService}}
+\doxysubsubsection{\texorpdfstring{getUsersByIds()}{getUsersByIds()}}
+{\footnotesize\ttfamily \label{a00179_a66da1c2c69c7601ba096e7d1e61ee1f2} 
+List$<$ \mbox{\hyperlink{a00135}{User}} $>$ com.\+example.\+graphic\+\_\+system.\+services.\+User\+Service.\+get\+Users\+By\+Ids (\begin{DoxyParamCaption}\item[{List$<$ Long $>$}]{ids}{}\end{DoxyParamCaption})}
+
+\Hypertarget{a00179_a787c7012f29daa89b4b71f7b8e2c0fd8}\index{com.example.graphic\_system.services.UserService@{com.example.graphic\_system.services.UserService}!updateUser@{updateUser}}
+\index{updateUser@{updateUser}!com.example.graphic\_system.services.UserService@{com.example.graphic\_system.services.UserService}}
+\doxysubsubsection{\texorpdfstring{updateUser()}{updateUser()}}
+{\footnotesize\ttfamily \label{a00179_a787c7012f29daa89b4b71f7b8e2c0fd8} 
+\mbox{\hyperlink{a00135}{User}} com.\+example.\+graphic\+\_\+system.\+services.\+User\+Service.\+update\+User (\begin{DoxyParamCaption}\item[{Long}]{id}{, }\item[{\mbox{\hyperlink{a00135}{User}}}]{user\+Details}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{a00179_a71a3d54ab4bfe7bfc0b59430c111cd27}\index{com.example.graphic\_system.services.UserService@{com.example.graphic\_system.services.UserService}!passwordEncoder@{passwordEncoder}}
+\index{passwordEncoder@{passwordEncoder}!com.example.graphic\_system.services.UserService@{com.example.graphic\_system.services.UserService}}
+\doxysubsubsection{\texorpdfstring{passwordEncoder}{passwordEncoder}}
+{\footnotesize\ttfamily \label{a00179_a71a3d54ab4bfe7bfc0b59430c111cd27} 
+Password\+Encoder com.\+example.\+graphic\+\_\+system.\+services.\+User\+Service.\+password\+Encoder\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{a00179_a27e17d5aaf9f6750f7fcfea0d3ad9dc5}\index{com.example.graphic\_system.services.UserService@{com.example.graphic\_system.services.UserService}!userRepository@{userRepository}}
+\index{userRepository@{userRepository}!com.example.graphic\_system.services.UserService@{com.example.graphic\_system.services.UserService}}
+\doxysubsubsection{\texorpdfstring{userRepository}{userRepository}}
+{\footnotesize\ttfamily \label{a00179_a27e17d5aaf9f6750f7fcfea0d3ad9dc5} 
+\mbox{\hyperlink{a00155}{User\+Repository}} com.\+example.\+graphic\+\_\+system.\+services.\+User\+Service.\+user\+Repository\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/com/example/graphic\+\_\+system/services/\mbox{\hyperlink{a00068}{User\+Service.\+java}}\end{DoxyCompactItemize}

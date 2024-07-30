@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .actions {
+            display: flex;
+            justify-content: space-between;
+        }
+        .actions a {
+            text-decoration: none;
+            color: #5cb85c;
+            font-weight: bold;
+        }
+        .actions a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Projects</h1>
+    <a href="/projects/create">Create New Project</a>
+    <table>
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Budget</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Goals</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="project : ${projects}">
+            <td th:text="${project.name}">Project Name</td>
+            <td th:text="${project.description}">Project Description</td>
+            <td th:text="${project.budget}">0.00</td>
+            <td th:text="${project.startDate}">Start Date</td>
+            <td th:text="${project.endDate}">End Date</td>
+            <td th:text="${project.goals}">Goals</td>
+            <td class="actions">
+                <a th:href="@{/projects/edit/{id}(id=${project.id})}">Edit</a>
+                <a th:href="@{/projects/delete/{id}(id=${project.id})}">Delete</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

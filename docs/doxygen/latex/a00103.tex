@@ -1,0 +1,87 @@
+\doxysection{com.\+example.\+graphic\+\_\+system.\+controllers.\+Resource\+Controller Class Reference}
+\hypertarget{a00103}{}\label{a00103}\index{com.example.graphic\_system.controllers.ResourceController@{com.example.graphic\_system.controllers.ResourceController}}
+
+
+Collaboration diagram for com.\+example.\+graphic\+\_\+system.\+controllers.\+Resource\+Controller\+:
+% FIG 0
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{a00103_a677fca1549b667e32761bef0f8787fd1}{get\+All\+Resources}} (@Path\+Variable Long task\+Id, Model model)
+\item 
+String \mbox{\hyperlink{a00103_a3bf4ee4c615df86a24d994310d3baaa8}{show\+Create\+Resource\+Form}} (@Path\+Variable Long task\+Id, Model model)
+\item 
+String \mbox{\hyperlink{a00103_adc0088facbd60da07ec44ab6f98bdb5f}{create\+Resource}} (@Path\+Variable Long task\+Id, @Model\+Attribute("{}resource"{}) \mbox{\hyperlink{a00127}{Resource}} resource)
+\item 
+String \mbox{\hyperlink{a00103_a19016135c46e785c00cd6d40d28c6b66}{show\+Edit\+Resource\+Form}} (@Path\+Variable Long task\+Id, @Path\+Variable Long id, Model model)
+\item 
+String \mbox{\hyperlink{a00103_a38e1d2f13ef76cb01f82989145c4e2db}{update\+Resource}} (@Path\+Variable Long task\+Id, @Path\+Variable Long id, @Model\+Attribute("{}resource"{}) \mbox{\hyperlink{a00127}{Resource}} resource\+Details)
+\item 
+String \mbox{\hyperlink{a00103_af9d44759f01842dfc46032fbd37bd419}{delete\+Resource}} (@Path\+Variable Long task\+Id, @Path\+Variable Long id)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{a00171}{Resource\+Service}} \mbox{\hyperlink{a00103_a55bea1dcdf41bb02a821fa7c1a95a61c}{resource\+Service}}
+\item 
+\mbox{\hyperlink{a00175}{Task\+Service}} \mbox{\hyperlink{a00103_a425030e06ac24aab484e53f7453fd4f6}{task\+Service}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{a00103_adc0088facbd60da07ec44ab6f98bdb5f}\index{com.example.graphic\_system.controllers.ResourceController@{com.example.graphic\_system.controllers.ResourceController}!createResource@{createResource}}
+\index{createResource@{createResource}!com.example.graphic\_system.controllers.ResourceController@{com.example.graphic\_system.controllers.ResourceController}}
+\doxysubsubsection{\texorpdfstring{createResource()}{createResource()}}
+{\footnotesize\ttfamily \label{a00103_adc0088facbd60da07ec44ab6f98bdb5f} 
+String com.\+example.\+graphic\+\_\+system.\+controllers.\+Resource\+Controller.\+create\+Resource (\begin{DoxyParamCaption}\item[{@Path\+Variable Long}]{task\+Id}{, }\item[{@Model\+Attribute("{}resource"{}) \mbox{\hyperlink{a00127}{Resource}}}]{resource}{}\end{DoxyParamCaption})}
+
+\Hypertarget{a00103_af9d44759f01842dfc46032fbd37bd419}\index{com.example.graphic\_system.controllers.ResourceController@{com.example.graphic\_system.controllers.ResourceController}!deleteResource@{deleteResource}}
+\index{deleteResource@{deleteResource}!com.example.graphic\_system.controllers.ResourceController@{com.example.graphic\_system.controllers.ResourceController}}
+\doxysubsubsection{\texorpdfstring{deleteResource()}{deleteResource()}}
+{\footnotesize\ttfamily \label{a00103_af9d44759f01842dfc46032fbd37bd419} 
+String com.\+example.\+graphic\+\_\+system.\+controllers.\+Resource\+Controller.\+delete\+Resource (\begin{DoxyParamCaption}\item[{@Path\+Variable Long}]{task\+Id}{, }\item[{@Path\+Variable Long}]{id}{}\end{DoxyParamCaption})}
+
+\Hypertarget{a00103_a677fca1549b667e32761bef0f8787fd1}\index{com.example.graphic\_system.controllers.ResourceController@{com.example.graphic\_system.controllers.ResourceController}!getAllResources@{getAllResources}}
+\index{getAllResources@{getAllResources}!com.example.graphic\_system.controllers.ResourceController@{com.example.graphic\_system.controllers.ResourceController}}
+\doxysubsubsection{\texorpdfstring{getAllResources()}{getAllResources()}}
+{\footnotesize\ttfamily \label{a00103_a677fca1549b667e32761bef0f8787fd1} 
+String com.\+example.\+graphic\+\_\+system.\+controllers.\+Resource\+Controller.\+get\+All\+Resources (\begin{DoxyParamCaption}\item[{@Path\+Variable Long}]{task\+Id}{, }\item[{Model}]{model}{}\end{DoxyParamCaption})}
+
+\Hypertarget{a00103_a3bf4ee4c615df86a24d994310d3baaa8}\index{com.example.graphic\_system.controllers.ResourceController@{com.example.graphic\_system.controllers.ResourceController}!showCreateResourceForm@{showCreateResourceForm}}
+\index{showCreateResourceForm@{showCreateResourceForm}!com.example.graphic\_system.controllers.ResourceController@{com.example.graphic\_system.controllers.ResourceController}}
+\doxysubsubsection{\texorpdfstring{showCreateResourceForm()}{showCreateResourceForm()}}
+{\footnotesize\ttfamily \label{a00103_a3bf4ee4c615df86a24d994310d3baaa8} 
+String com.\+example.\+graphic\+\_\+system.\+controllers.\+Resource\+Controller.\+show\+Create\+Resource\+Form (\begin{DoxyParamCaption}\item[{@Path\+Variable Long}]{task\+Id}{, }\item[{Model}]{model}{}\end{DoxyParamCaption})}
+
+\Hypertarget{a00103_a19016135c46e785c00cd6d40d28c6b66}\index{com.example.graphic\_system.controllers.ResourceController@{com.example.graphic\_system.controllers.ResourceController}!showEditResourceForm@{showEditResourceForm}}
+\index{showEditResourceForm@{showEditResourceForm}!com.example.graphic\_system.controllers.ResourceController@{com.example.graphic\_system.controllers.ResourceController}}
+\doxysubsubsection{\texorpdfstring{showEditResourceForm()}{showEditResourceForm()}}
+{\footnotesize\ttfamily \label{a00103_a19016135c46e785c00cd6d40d28c6b66} 
+String com.\+example.\+graphic\+\_\+system.\+controllers.\+Resource\+Controller.\+show\+Edit\+Resource\+Form (\begin{DoxyParamCaption}\item[{@Path\+Variable Long}]{task\+Id}{, }\item[{@Path\+Variable Long}]{id}{, }\item[{Model}]{model}{}\end{DoxyParamCaption})}
+
+\Hypertarget{a00103_a38e1d2f13ef76cb01f82989145c4e2db}\index{com.example.graphic\_system.controllers.ResourceController@{com.example.graphic\_system.controllers.ResourceController}!updateResource@{updateResource}}
+\index{updateResource@{updateResource}!com.example.graphic\_system.controllers.ResourceController@{com.example.graphic\_system.controllers.ResourceController}}
+\doxysubsubsection{\texorpdfstring{updateResource()}{updateResource()}}
+{\footnotesize\ttfamily \label{a00103_a38e1d2f13ef76cb01f82989145c4e2db} 
+String com.\+example.\+graphic\+\_\+system.\+controllers.\+Resource\+Controller.\+update\+Resource (\begin{DoxyParamCaption}\item[{@Path\+Variable Long}]{task\+Id}{, }\item[{@Path\+Variable Long}]{id}{, }\item[{@Model\+Attribute("{}resource"{}) \mbox{\hyperlink{a00127}{Resource}}}]{resource\+Details}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{a00103_a55bea1dcdf41bb02a821fa7c1a95a61c}\index{com.example.graphic\_system.controllers.ResourceController@{com.example.graphic\_system.controllers.ResourceController}!resourceService@{resourceService}}
+\index{resourceService@{resourceService}!com.example.graphic\_system.controllers.ResourceController@{com.example.graphic\_system.controllers.ResourceController}}
+\doxysubsubsection{\texorpdfstring{resourceService}{resourceService}}
+{\footnotesize\ttfamily \label{a00103_a55bea1dcdf41bb02a821fa7c1a95a61c} 
+\mbox{\hyperlink{a00171}{Resource\+Service}} com.\+example.\+graphic\+\_\+system.\+controllers.\+Resource\+Controller.\+resource\+Service\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{a00103_a425030e06ac24aab484e53f7453fd4f6}\index{com.example.graphic\_system.controllers.ResourceController@{com.example.graphic\_system.controllers.ResourceController}!taskService@{taskService}}
+\index{taskService@{taskService}!com.example.graphic\_system.controllers.ResourceController@{com.example.graphic\_system.controllers.ResourceController}}
+\doxysubsubsection{\texorpdfstring{taskService}{taskService}}
+{\footnotesize\ttfamily \label{a00103_a425030e06ac24aab484e53f7453fd4f6} 
+\mbox{\hyperlink{a00175}{Task\+Service}} com.\+example.\+graphic\+\_\+system.\+controllers.\+Resource\+Controller.\+task\+Service\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/com/example/graphic\+\_\+system/controllers/\mbox{\hyperlink{a00011}{Resource\+Controller.\+java}}\end{DoxyCompactItemize}

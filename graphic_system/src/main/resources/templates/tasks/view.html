@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Task Details</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+    .container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1, h2 {
+      text-align: center;
+      color: #333;
+    }
+    .comment-form {
+      margin-top: 20px;
+    }
+    .comment-form label, .comment-form textarea, .comment-form button {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .comment-form textarea {
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    .comment-form button {
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      background-color: #5cb85c;
+      color: white;
+      cursor: pointer;
+    }
+    .comment-form button:hover {
+      background-color: #4cae4c;
+    }
+    .comments {
+      margin-top: 20px;
+    }
+    .comment {
+      margin-bottom: 10px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    .comment .author {
+      font-weight: bold;
+    }
+    .comment .date {
+      font-size: 0.9em;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>Task: <span th:text="${task.name}">Task Name</span></h1>
+  <p><strong>Description:</strong> <span th:text="${task.description}">Task Description</span></p>
+  <p><strong>Start Date:</strong> <span th:text="${task.startDate}">Start Date</span></p>
+  <p><strong>End Date:</strong> <span th:text="${task.endDate}">End Date</span></p>
+  <p><strong>Goal:</strong> <span th:text="${task.goal}">Goal</span></p>
+  <p><strong>Assignee:</strong> <span th:text="${task.assignee.username}">Assignee</span></p>
+
+  <h2>Comments</h2>
+  <div class="comments">
+    <div th:each="comment : ${comments}" class="comment">
+      <p class="author" th:text="${comment.author.username}">Author</p>
+      <p class="date" th:text="${comment.createdDate}">Date</p>
+      <p th:text="${comment.content}">Comment Content</p>
+    </div>
+  </div>
+
+  <div class="comment-form">
+    <form th:action="@{/projects/{projectId}/tasks/{taskId}/comments/create(projectId=${task.project.id},taskId=${task.id})}" th:object="${newComment}" method="post">
+      <label>Content:</label>
+      <textarea th:field="*{content}"></textarea>
+      <button type="submit">Add Comment</button>
+    </form>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+\doxysection{com.\+example.\+graphic\+\_\+system.\+controllers.\+Task\+Controller Class Reference}
+\hypertarget{a00107}{}\label{a00107}\index{com.example.graphic\_system.controllers.TaskController@{com.example.graphic\_system.controllers.TaskController}}
+
+
+Collaboration diagram for com.\+example.\+graphic\+\_\+system.\+controllers.\+Task\+Controller\+:
+% FIG 0
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{a00107_a276abd7add87e777e584b1140231ce9c}{view\+Task}} (@Path\+Variable Long project\+Id, @Path\+Variable Long task\+Id, Model model, Http\+Session session)
+\item 
+String \mbox{\hyperlink{a00107_a54011e28ee0888d2c88ae5f219dc53b2}{create\+Comment}} (@Path\+Variable Long project\+Id, @Path\+Variable Long task\+Id, @Model\+Attribute("{}comment"{}) \mbox{\hyperlink{a00119}{Comment}} comment, Http\+Session session)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{a00175}{Task\+Service}} \mbox{\hyperlink{a00107_a56716d2e1e42614fbb1372c22f68b17f}{task\+Service}}
+\item 
+\mbox{\hyperlink{a00159}{Comment\+Service}} \mbox{\hyperlink{a00107_aa59e1ce3b856a2df67fcf50907e186f6}{comment\+Service}}
+\item 
+\mbox{\hyperlink{a00179}{User\+Service}} \mbox{\hyperlink{a00107_a11ebbe3df845834fb432f79dc5755fe4}{user\+Service}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{a00107_a54011e28ee0888d2c88ae5f219dc53b2}\index{com.example.graphic\_system.controllers.TaskController@{com.example.graphic\_system.controllers.TaskController}!createComment@{createComment}}
+\index{createComment@{createComment}!com.example.graphic\_system.controllers.TaskController@{com.example.graphic\_system.controllers.TaskController}}
+\doxysubsubsection{\texorpdfstring{createComment()}{createComment()}}
+{\footnotesize\ttfamily \label{a00107_a54011e28ee0888d2c88ae5f219dc53b2} 
+String com.\+example.\+graphic\+\_\+system.\+controllers.\+Task\+Controller.\+create\+Comment (\begin{DoxyParamCaption}\item[{@Path\+Variable Long}]{project\+Id}{, }\item[{@Path\+Variable Long}]{task\+Id}{, }\item[{@Model\+Attribute("{}comment"{}) \mbox{\hyperlink{a00119}{Comment}}}]{comment}{, }\item[{Http\+Session}]{session}{}\end{DoxyParamCaption})}
+
+\Hypertarget{a00107_a276abd7add87e777e584b1140231ce9c}\index{com.example.graphic\_system.controllers.TaskController@{com.example.graphic\_system.controllers.TaskController}!viewTask@{viewTask}}
+\index{viewTask@{viewTask}!com.example.graphic\_system.controllers.TaskController@{com.example.graphic\_system.controllers.TaskController}}
+\doxysubsubsection{\texorpdfstring{viewTask()}{viewTask()}}
+{\footnotesize\ttfamily \label{a00107_a276abd7add87e777e584b1140231ce9c} 
+String com.\+example.\+graphic\+\_\+system.\+controllers.\+Task\+Controller.\+view\+Task (\begin{DoxyParamCaption}\item[{@Path\+Variable Long}]{project\+Id}{, }\item[{@Path\+Variable Long}]{task\+Id}{, }\item[{Model}]{model}{, }\item[{Http\+Session}]{session}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{a00107_aa59e1ce3b856a2df67fcf50907e186f6}\index{com.example.graphic\_system.controllers.TaskController@{com.example.graphic\_system.controllers.TaskController}!commentService@{commentService}}
+\index{commentService@{commentService}!com.example.graphic\_system.controllers.TaskController@{com.example.graphic\_system.controllers.TaskController}}
+\doxysubsubsection{\texorpdfstring{commentService}{commentService}}
+{\footnotesize\ttfamily \label{a00107_aa59e1ce3b856a2df67fcf50907e186f6} 
+\mbox{\hyperlink{a00159}{Comment\+Service}} com.\+example.\+graphic\+\_\+system.\+controllers.\+Task\+Controller.\+comment\+Service\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{a00107_a56716d2e1e42614fbb1372c22f68b17f}\index{com.example.graphic\_system.controllers.TaskController@{com.example.graphic\_system.controllers.TaskController}!taskService@{taskService}}
+\index{taskService@{taskService}!com.example.graphic\_system.controllers.TaskController@{com.example.graphic\_system.controllers.TaskController}}
+\doxysubsubsection{\texorpdfstring{taskService}{taskService}}
+{\footnotesize\ttfamily \label{a00107_a56716d2e1e42614fbb1372c22f68b17f} 
+\mbox{\hyperlink{a00175}{Task\+Service}} com.\+example.\+graphic\+\_\+system.\+controllers.\+Task\+Controller.\+task\+Service\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{a00107_a11ebbe3df845834fb432f79dc5755fe4}\index{com.example.graphic\_system.controllers.TaskController@{com.example.graphic\_system.controllers.TaskController}!userService@{userService}}
+\index{userService@{userService}!com.example.graphic\_system.controllers.TaskController@{com.example.graphic\_system.controllers.TaskController}}
+\doxysubsubsection{\texorpdfstring{userService}{userService}}
+{\footnotesize\ttfamily \label{a00107_a11ebbe3df845834fb432f79dc5755fe4} 
+\mbox{\hyperlink{a00179}{User\+Service}} com.\+example.\+graphic\+\_\+system.\+controllers.\+Task\+Controller.\+user\+Service\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/com/example/graphic\+\_\+system/controllers/\mbox{\hyperlink{a00014}{Task\+Controller.\+java}}\end{DoxyCompactItemize}

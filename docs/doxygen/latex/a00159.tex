@@ -1,0 +1,71 @@
+\doxysection{com.\+example.\+graphic\+\_\+system.\+services.\+Comment\+Service Class Reference}
+\hypertarget{a00159}{}\label{a00159}\index{com.example.graphic\_system.services.CommentService@{com.example.graphic\_system.services.CommentService}}
+
+
+Collaboration diagram for com.\+example.\+graphic\+\_\+system.\+services.\+Comment\+Service\+:
+% FIG 0
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{a00119}{Comment}} $>$ \mbox{\hyperlink{a00159_a19850bf4c8320ddb16b31ea1bd10a9f6}{get\+Comments\+By\+Task\+Id}} (Long task\+Id)
+\item 
+Optional$<$ \mbox{\hyperlink{a00119}{Comment}} $>$ \mbox{\hyperlink{a00159_a7cd7fffd19dbe4ef0edfd0ecd0d0da5e}{get\+Comment\+By\+Id}} (Long id)
+\item 
+\mbox{\hyperlink{a00119}{Comment}} \mbox{\hyperlink{a00159_ae8978d6652eda4eb3701cee2ca38e78d}{create\+Comment}} (\mbox{\hyperlink{a00119}{Comment}} comment)
+\item 
+\mbox{\hyperlink{a00119}{Comment}} \mbox{\hyperlink{a00159_a2108a67e8531be6e4019143a88cc1603}{update\+Comment}} (Long id, \mbox{\hyperlink{a00119}{Comment}} comment\+Details)
+\item 
+void \mbox{\hyperlink{a00159_ae3f09e8802d41fa163a8208d154ae702}{delete\+Comment}} (Long id)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{a00139}{Comment\+Repository}} \mbox{\hyperlink{a00159_a7e00cd9ddbfa534912404423acaf8d43}{comment\+Repository}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{a00159_ae8978d6652eda4eb3701cee2ca38e78d}\index{com.example.graphic\_system.services.CommentService@{com.example.graphic\_system.services.CommentService}!createComment@{createComment}}
+\index{createComment@{createComment}!com.example.graphic\_system.services.CommentService@{com.example.graphic\_system.services.CommentService}}
+\doxysubsubsection{\texorpdfstring{createComment()}{createComment()}}
+{\footnotesize\ttfamily \label{a00159_ae8978d6652eda4eb3701cee2ca38e78d} 
+\mbox{\hyperlink{a00119}{Comment}} com.\+example.\+graphic\+\_\+system.\+services.\+Comment\+Service.\+create\+Comment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{a00119}{Comment}}}]{comment}{}\end{DoxyParamCaption})}
+
+\Hypertarget{a00159_ae3f09e8802d41fa163a8208d154ae702}\index{com.example.graphic\_system.services.CommentService@{com.example.graphic\_system.services.CommentService}!deleteComment@{deleteComment}}
+\index{deleteComment@{deleteComment}!com.example.graphic\_system.services.CommentService@{com.example.graphic\_system.services.CommentService}}
+\doxysubsubsection{\texorpdfstring{deleteComment()}{deleteComment()}}
+{\footnotesize\ttfamily \label{a00159_ae3f09e8802d41fa163a8208d154ae702} 
+void com.\+example.\+graphic\+\_\+system.\+services.\+Comment\+Service.\+delete\+Comment (\begin{DoxyParamCaption}\item[{Long}]{id}{}\end{DoxyParamCaption})}
+
+\Hypertarget{a00159_a7cd7fffd19dbe4ef0edfd0ecd0d0da5e}\index{com.example.graphic\_system.services.CommentService@{com.example.graphic\_system.services.CommentService}!getCommentById@{getCommentById}}
+\index{getCommentById@{getCommentById}!com.example.graphic\_system.services.CommentService@{com.example.graphic\_system.services.CommentService}}
+\doxysubsubsection{\texorpdfstring{getCommentById()}{getCommentById()}}
+{\footnotesize\ttfamily \label{a00159_a7cd7fffd19dbe4ef0edfd0ecd0d0da5e} 
+Optional$<$ \mbox{\hyperlink{a00119}{Comment}} $>$ com.\+example.\+graphic\+\_\+system.\+services.\+Comment\+Service.\+get\+Comment\+By\+Id (\begin{DoxyParamCaption}\item[{Long}]{id}{}\end{DoxyParamCaption})}
+
+\Hypertarget{a00159_a19850bf4c8320ddb16b31ea1bd10a9f6}\index{com.example.graphic\_system.services.CommentService@{com.example.graphic\_system.services.CommentService}!getCommentsByTaskId@{getCommentsByTaskId}}
+\index{getCommentsByTaskId@{getCommentsByTaskId}!com.example.graphic\_system.services.CommentService@{com.example.graphic\_system.services.CommentService}}
+\doxysubsubsection{\texorpdfstring{getCommentsByTaskId()}{getCommentsByTaskId()}}
+{\footnotesize\ttfamily \label{a00159_a19850bf4c8320ddb16b31ea1bd10a9f6} 
+List$<$ \mbox{\hyperlink{a00119}{Comment}} $>$ com.\+example.\+graphic\+\_\+system.\+services.\+Comment\+Service.\+get\+Comments\+By\+Task\+Id (\begin{DoxyParamCaption}\item[{Long}]{task\+Id}{}\end{DoxyParamCaption})}
+
+\Hypertarget{a00159_a2108a67e8531be6e4019143a88cc1603}\index{com.example.graphic\_system.services.CommentService@{com.example.graphic\_system.services.CommentService}!updateComment@{updateComment}}
+\index{updateComment@{updateComment}!com.example.graphic\_system.services.CommentService@{com.example.graphic\_system.services.CommentService}}
+\doxysubsubsection{\texorpdfstring{updateComment()}{updateComment()}}
+{\footnotesize\ttfamily \label{a00159_a2108a67e8531be6e4019143a88cc1603} 
+\mbox{\hyperlink{a00119}{Comment}} com.\+example.\+graphic\+\_\+system.\+services.\+Comment\+Service.\+update\+Comment (\begin{DoxyParamCaption}\item[{Long}]{id}{, }\item[{\mbox{\hyperlink{a00119}{Comment}}}]{comment\+Details}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{a00159_a7e00cd9ddbfa534912404423acaf8d43}\index{com.example.graphic\_system.services.CommentService@{com.example.graphic\_system.services.CommentService}!commentRepository@{commentRepository}}
+\index{commentRepository@{commentRepository}!com.example.graphic\_system.services.CommentService@{com.example.graphic\_system.services.CommentService}}
+\doxysubsubsection{\texorpdfstring{commentRepository}{commentRepository}}
+{\footnotesize\ttfamily \label{a00159_a7e00cd9ddbfa534912404423acaf8d43} 
+\mbox{\hyperlink{a00139}{Comment\+Repository}} com.\+example.\+graphic\+\_\+system.\+services.\+Comment\+Service.\+comment\+Repository\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/com/example/graphic\+\_\+system/services/\mbox{\hyperlink{a00053}{Comment\+Service.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Create Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin: 10px 0 5px;
+        }
+        input[type="text"], input[type="number"], textarea, input[type="date"], select {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #5cb85c;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Create Project</h1>
+    <form th:action="@{/projects/create}" th:object="${project}" method="post">
+        <label>Name:</label>
+        <input type="text" th:field="*{name}" />
+        <label>Description:</label>
+        <textarea th:field="*{description}"></textarea>
+        <label>Budget:</label>
+        <input type="number" th:field="*{budget}" />
+        <label>Start Date:</label>
+        <input type="date" th:field="*{startDate}" />
+        <label>End Date:</label>
+        <input type="date" th:field="*{endDate}" />
+        <label>Goals:</label>
+        <textarea th:field="*{goals}"></textarea>
+        <label>Users:</label>
+        <select name="userIds" multiple>
+            <option th:each="user : ${users}" th:value="${user.id}" th:text="${user.username}"></option>
+        </select>
+        <button type="submit">Create</button>
+    </form>
+</div>
+</body>
+</html>
